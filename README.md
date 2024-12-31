@@ -1,12 +1,12 @@
 # INTRA-AS-MPLS-L3-VPN
 # R1
->> vrf defination nepal-bank
+> vrf defination nepal-bank
 > 
-> address-family ipv4
+>> address-family ipv4
 >
 > vrf defination laxmi-sunrise-bank
 > 
-> address-family ipv4
+>> address-family ipv4
 >
 > int f 1/0
 > 
