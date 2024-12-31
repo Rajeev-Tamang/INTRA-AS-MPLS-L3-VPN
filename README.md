@@ -23,29 +23,25 @@
 > vrf forwarding laxmi-sunrise-bank
 > 
 > ip address 192.168.16.1 255.255.255.0
-
+> 
 > no shutdwon
-
+> 
 > exit
-
->
-
+> 
 > int f 0/0
-
+> 
 > ip address 192.168.12.1 255.255.255.0
 > 
 > mpls ip
 > 
 > no shutdown
-
+> 
 > exit
-
 >
-
 > int loop 0
-
+> 
 > ip address 1.1.1.1 255.255.255.255
-
+> 
 > exit
 >
 > ip cef
