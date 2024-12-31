@@ -101,4 +101,41 @@
 
 # R3
 
+>ip cef
+>
+>mpls ip
+>
+>mpls ldp router-id loopback 0
+>
+>int f 1/0
+>
+>mpls ip
+>
+>ip address 192.168.23.3 255.255.255.0
+>
+>no shut
+>
+>exit
+>
+>int f 0/0
+>
+>mpls ip
+>
+>ip address 192.168.34.3 255.255.255.0
+>
+>no shut
+>
+>exit
+>
+>router ospf 1
+>
+>network 192.168.23.0 0.0.0.255 area 0
+>
+>network 192.168.34.0 0.0.0.255 area 0
+>
+>network 3.3.3.3 0.0.0.0 area 0
+>
+>exit
+
+# R4
 
