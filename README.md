@@ -61,9 +61,9 @@
 >network 192.168.12.0 0.0.0.255 area 0
 > 
 >router rip
-
+> 
 >version 2
-
+> 
 >no auto-summary
 >
 >address-family ipv4 vrf laxmi-sunrise-bank
