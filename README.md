@@ -50,6 +50,13 @@
 >
 > mpls ldp router-id loopback 0
 >
+> router ospf 1
+>
+> network 192.168.12.0 0.0.0.255 area 0 
+>
+> network 1.1.1.1 0.0.0.0 area 0
+>
+> exit
 
 
 # R2
@@ -193,6 +200,14 @@
 > no shut
 >
 > exit
+>
+>  router ospf 1
+>
+> network 192.168.34.0 0.0.0.255 area 0 
+>
+> network 4.4.4.4 0.0.0.0 area 0
+>
+> exit
 
 
 # R5
@@ -234,7 +249,7 @@
 
 # R6
 >
->>int f 2/0
+>int f 2/0
 >
 >no shut
 >
@@ -275,7 +290,7 @@
 # R7
 
 >
->>int f 1/0
+>int f 1/0
 >
 >no shut
 >
