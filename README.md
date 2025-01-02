@@ -14,7 +14,7 @@
 > 
 > ip add 192.168.15.1 255.255.255.0
 > 
-> no shutdown
+> no shut
 > 
 > exit
 >
