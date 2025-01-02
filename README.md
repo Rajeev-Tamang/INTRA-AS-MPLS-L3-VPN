@@ -119,6 +119,33 @@
 >network 2.2.2.2 0.0.0.0 area 0
 >
 >exit
+>
+>router ospf 2 vrf nepal-bank
+>
+> network 192.168.47.0 0.0.0.255 area 0
+>
+> router ospf 1
+>
+> network 4.4.4.4 0.0.0.0 area 0
+>
+> network 192.168.34.0 0.0.0.255 area 0
+>
+> router rip
+> 
+> version 2
+>
+> no auto-summary
+>
+> address-family ipv4 vrf laxmi-sunrise-bank
+>
+> network 192.168.48.0
+>
+> no auto-summary
+>
+> version 2
+>
+>exit-address-family
+>
 
 # R3
 
