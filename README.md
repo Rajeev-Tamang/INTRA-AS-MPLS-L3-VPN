@@ -50,13 +50,32 @@
 >
 > mpls ldp router-id loopback 0
 >
-> router ospf 1
+> router ospf 2 vrf nepal-bank
+
+> network 192.168.15.0 0.0.0.255 area 0
+
+>router ospf 1
+
+>network 1.1.1.1 0.0.0.0 area 0
+
+>network 192.168.12.0 0.0.0.255 area 0
+
+
+>router rip
+
+>version 2
+
+>no auto-summary
 >
-> network 192.168.12.0 0.0.0.255 area 0 
+>address-family ipv4 vrf laxmi-sunrise-bank
 >
-> network 1.1.1.1 0.0.0.0 area 0
+> network 192.168.16.0
+> 
+  > no auto-summary
 >
-> exit
+  > version 2
+>
+ > exit-address-family
 
 
 # R2
