@@ -92,22 +92,33 @@
 > router bgp 100
 >
 > bgp log-neighbor-changes
+> 
 > network 1.1.1.1 mask 255.255.255.255
+> 
 > neighbor 4.4.4.4 remote-as 100
+> 
 > neighbor 4.4.4.4 update-source Loopback0
+> 
 > neighbor 4.4.4.4 next-hop-self
 >
 > address-family vpnv4
+> 
 > neighbor 4.4.4.4 activate
+> 
 > neighbor 4.4.4.4 send-community extended
+> 
 > exit-address-family
 > 
 > address-family ipv4 vrf laxmi-sunrise-bank
+> 
 > redistribute rip
+
 > exit-address-family
 >
 > address-family ipv4 vrf nepal-bank
+> 
 > redistribute ospf 2
+> 
 > exit-address-family
 >
 
@@ -296,25 +307,39 @@
 >exit-address-family
 >
 > router bgp 100
- bgp log-neighbor-changes
- network 4.4.4.4 mask 255.255.255.255
- neighbor 1.1.1.1 remote-as 100
- neighbor 1.1.1.1 update-source Loopback0
- neighbor 1.1.1.1 next-hop-self
- !
- address-family vpnv4
-  neighbor 1.1.1.1 activate
-  neighbor 1.1.1.1 send-community extended
- exit-address-family
- !
- address-family ipv4 vrf laxmi-sunrise-bank
-  redistribute rip
- exit-address-family
- !
- address-family ipv4 vrf nepal-bank
-  redistribute ospf 2
- exit-address-family
-!
+
+> bgp log-neighbor-changes
+
+> network 4.4.4.4 mask 255.255.255.255
+
+> neighbor 1.1.1.1 remote-as 100
+
+> neighbor 1.1.1.1 update-source Loopback0
+
+> neighbor 1.1.1.1 next-hop-self
+
+> 
+
+> address-family vpnv4
+
+> neighbor 1.1.1.1 activate
+
+> neighbor 1.1.1.1 send-community extended
+
+> exit-address-family
+>
+> address-family ipv4 vrf laxmi-sunrise-bank
+
+> redistribute rip
+>
+> exit-address-family
+>
+> address-family ipv4 vrf nepal-bank
+
+> redistribute ospf 2
+
+> exit-address-family
+
 
 
 # R5
