@@ -1,3 +1,4 @@
+![INTRA-AS-MPLS-L3-VPN](INTRA%20AS%20MPLS%20L3%20VPN.jpg)
 # INTRA-AS-MPLS-L3-VPN
 # R1
 > vrf definition nepal-bank
